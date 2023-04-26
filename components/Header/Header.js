@@ -54,7 +54,7 @@ const Header = () => {
         alt="search-icon"
         height={25}
         width={25}
-        src={"/assets/image/profile-logo.png"}
+        src={"/assets/image/profilelogo.png"}
         />
 
 

@@ -1,5 +1,6 @@
-import { Box, Grid } from "@mui/material"
+import { Box, Grid, Pagination } from "@mui/material"
 import Avatars from "../Avatars/Avatars"
+import HomeMain from "../HomeMain/HomeMain"
 
 const HomePage = () => {
   return (
@@ -9,8 +10,10 @@ const HomePage = () => {
     sasa
 
 </Grid>
-<Grid item md={4} >
+<Grid item md={4} className="pr-2 py-5" >
+    <HomeMain/>
     <Avatars/>
+    <Pagination count={2} shape="rounded" className="flex justify-center content-center flex-wrap" />
 
 </Grid>
 

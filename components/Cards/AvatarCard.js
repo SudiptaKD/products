@@ -6,6 +6,7 @@ import { Avatar, Popover, Rating, SvgIcon, Typography } from "@mui/material";
 import { pink } from "@mui/material/colors";
 import { Box } from "@mui/system";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const AvatarCard = ({ singleAvatarData }) => {
@@ -44,9 +45,11 @@ const AvatarCard = ({ singleAvatarData }) => {
         </span>
       </Box>
       <Box className=" px-1 py-1">
+        <Link href={`/single-avatar/${singleAvatarData?.id}`}>
         <Typography className="text-md font-semibold ">
           Avatar name “Avatown” -nice original avatar of Avatown
         </Typography>
+        </Link>
         <Box className="flex justify-between gap-2">
           <Rating
             size="small"
@@ -71,6 +74,7 @@ const AvatarCard = ({ singleAvatarData }) => {
           />
         </Box>
       </Box>
+      <Link href={`/single-avatar/${singleAvatarData?.id}`}>
       <Box className="flex gap-2 justify-start px-2">
         <Avatar
           alt="pic"
@@ -81,6 +85,7 @@ const AvatarCard = ({ singleAvatarData }) => {
           Avatar Joe&apos;s
         </Typography>
       </Box>
+      </Link>
       <Box className="flex gap-1 justify-start px-2">
         <Typography className="text-xs font-[300] text-black mt-2 ">
           $

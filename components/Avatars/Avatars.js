@@ -7,7 +7,7 @@ const Avatars = () => {
     <Grid container>
       {AvatarData.map((avatar, index) => {
         return (
-          <Grid item md={3} key={index} className="flex flex-wrap justify-center content-center" >
+          <Grid item md={3} key={index}  className="flex flex-wrap justify-center content-center" >
             <AvatarCard singleAvatarData={avatar} />
           </Grid>
         );

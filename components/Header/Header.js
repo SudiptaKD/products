@@ -11,11 +11,11 @@ const Header = () => {
         <Image
           alt="logo"
           height={100}
-          width={270}
+          width={215}
           src={"/assets/image/logo1.png"}
         />
-        <Box className="ml-16 text-xl font-medium flex flex-wrap justify-center content-center">
-          <Link href={"/"} className="underline underline-offset-4">
+        <Box className="ml-12 text-xl font-medium flex flex-wrap justify-center content-center">
+          <Link href={"/"} className="underline underline-offset-[5px]">
             Go to Marketpage
           </Link>
         </Box>
@@ -48,7 +48,7 @@ const Header = () => {
               <SvgIcon component={ShoppingCartOutlinedIcon} inheritViewBox />
             </Box>
           </Badge>
-          <Box className="h-9 w-9 bg-white rounded-lg flex flex-wrap content-center justify-center cursor-pointer">
+          <Box className="h-9 w-9 bg-[#FAFAFA] rounded-lg flex flex-wrap content-center justify-center cursor-pointer">
             <Image
               alt="search-icon"
               height={25}

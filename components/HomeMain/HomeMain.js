@@ -13,7 +13,7 @@ const HomeMain = () => {
         label="Sort HomeMain"
         //onChange={handleChange}
       > */}
-          <select className="border-[3px] rounded-md p-1 border-black">
+          <select className="border-[2px] rounded-md p-1 border-black">
             <option value={0}>Featured</option>
             <option value={10}>Price: Low to High</option>
             <option value={20}>Price: High to Low</option>

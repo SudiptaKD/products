@@ -1,5 +1,6 @@
 import { Box, Grid, Pagination } from "@mui/material"
 import Avatars from "../Avatars/Avatars"
+import HomeLeft from "../HomeLeft/HomeLeft"
 import HomeMain from "../HomeMain/HomeMain"
 
 const HomePage = () => {
@@ -7,7 +8,7 @@ const HomePage = () => {
    <Box className="text-black">
     <Grid container  columns={5}>
 <Grid item md={1} >
-    sasa
+   <HomeLeft/> 
 
 </Grid>
 <Grid item md={4} className="pr-2 py-5" >

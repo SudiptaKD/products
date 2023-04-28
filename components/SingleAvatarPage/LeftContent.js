@@ -12,7 +12,9 @@ const LeftContent = () => {
     const [pic, setPic] = useState(query.id);
     const [open, setOpen] = useState(false);
     const ids= [query.id, 1, 2, 3]
-    const index = pic > 3  ? 0 : pic
+    const [index, setIndex] = useState(0)
+    console.log(pic)
+
 
   
     const handleClickOpen = () => {
@@ -35,7 +37,10 @@ const LeftContent = () => {
           <Grid container className="p-2 py-8 max-w-[350px]">
           <Grid item md={3}  className="flex flex-wrap justify-center content-center" >
             <Image
-            onClick={()=> setPic(query.id)}
+            onClick={()=> {
+              setPic(query.id)
+              setIndex(0)
+            }}
               className="  rounded-[5px] "
               src={`/assets/avatar-pictures/v${query.id}.png`}
               alt="abc"
@@ -47,7 +52,10 @@ const LeftContent = () => {
         return (
           <Grid item md={3} key={index}  className="flex flex-wrap justify-center content-center" >
             <Image
-            onClick={()=> setPic(avatar.id)}
+            onClick={()=> {
+              setPic(avatar.id)
+              setIndex(avatar.id)
+            }}
               className="  rounded-[5px] "
               src={`/assets/avatar-pictures/v${avatar.id}.png`}
               alt="abc"
@@ -71,7 +79,9 @@ const LeftContent = () => {
             <span className=" cursor-pointer absolute text-[16px]  right-4 top-[275px] text-white">
           <SvgIcon
           onClick={()=> {
-            if (index!= 3)setPic(ids[index+1])
+            if (index!= 3){
+              setPic(ids[index+1])
+            setIndex(index+1)}
           }}
           fontSize="Large"
             component={ArrowForwardIosIcon}
@@ -82,8 +92,11 @@ const LeftContent = () => {
          <span className=" cursor-pointer absolute text-[16px]  left-4 top-[275px] text-white">
           <SvgIcon
           onClick={()=> {
-            if (index!= 0)setPic(ids[index-1])
-          }}
+            if (index != 0){
+              setPic(ids[index-1])
+            setIndex(index-1)}
+          }
+          }
           fontSize="Large"
             component={ArrowBackIosIcon}
             inheritViewBox

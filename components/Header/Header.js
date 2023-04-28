@@ -3,12 +3,15 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Badge, Box, SvgIcon } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
   return (
     <Box className="h-[57px] bg-gradient-to-r from-[#371c83] via-[#5c1e89] to-[#7f1f8b] p-2 flex justify-between">
       <Box className="flex justify-start">
         <Image
+        onClick={()=> router.push("/")}
           alt="logo"
           height={100}
           width={215}

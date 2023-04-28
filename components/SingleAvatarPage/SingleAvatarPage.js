@@ -3,27 +3,15 @@ import { useRouter } from "next/router";
 import ParentLayout from "../Layout";
 
 import { Grid } from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import LeftContent from "./LeftContent";
 import MiddleContent from "./MiddleContent";
 
 const SingleAvatarPage = () => {
   const { query } = useRouter();
-  const [favourite, setFavourite] = useState(false);
-  const [copied, setCopied] = useState(false);
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [pic, setPic] = useState(query.id);
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? "simple-popover" : undefined;
 
   return (
     <ParentLayout>
@@ -37,13 +25,7 @@ const SingleAvatarPage = () => {
         </Box>
         <Grid container className="p-4">
           <Grid item md={4}>
-            <Image
-              className="  rounded-[5px] "
-              src={`/assets/avatar-pictures/v${query.id}.png`}
-              alt="abc"
-              height={350}
-              width={350}
-            />
+            <LeftContent/>
           </Grid>
           <Grid item md={4}>
             <MiddleContent />

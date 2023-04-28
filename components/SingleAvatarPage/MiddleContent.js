@@ -27,7 +27,7 @@ const MiddleContent = () => {
 
   return (
     <Box>
-      <Box className=" px-1 py-1">
+      <Box className=" px-1 py-1 flex  flex-col gap-3">
         <Box className="text-xl font-semibold text-black ">
           Avatar name “Avatown” -nice original avatar of Avatown
         </Box>

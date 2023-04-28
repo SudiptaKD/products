@@ -36,6 +36,7 @@ const AvatarCard = ({ singleAvatarData }) => {
         />
         <span className=" cursor-pointer absolute text-[16px] px-2 right-3 top-3 text-white bg-blue-600 rounded-md flex ">
           <SvgIcon
+          fontSize="small"
             component={ShoppingCartOutlinedIcon}
             inheritViewBox
             className="text-[16px] mt-1 mr-1"
@@ -61,6 +62,7 @@ const AvatarCard = ({ singleAvatarData }) => {
           </Box>
 
           <SvgIcon
+          fontSize="small"
             onClick={() => {
               if (!favourite) {
                 setFavourite(singleAvatarData.path);

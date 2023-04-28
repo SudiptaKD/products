@@ -1,9 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 const HomeMain = () => {
   return (
       <Box className="flex justify-between">
-        <Typography className="text-3xl font-medium">All items</Typography>
+        <Box className="text-3xl font-medium">All items</Box>
         <Box sx={{ m: 1, minWidth: 180 }}>
           {/* <InputLabel id="demo-select-small-label">Sort HomeMain</InputLabel>
             <Select

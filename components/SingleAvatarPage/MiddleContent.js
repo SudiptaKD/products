@@ -45,6 +45,7 @@ const MiddleContent = () => {
           </Box>
 
           <SvgIcon
+          fontSize="small"
             onClick={() => {
               if (!favourite) {
                 setFavourite(true);
@@ -69,8 +70,8 @@ const MiddleContent = () => {
         </Box>
       </Box>
 
-      <Box className="flex gap-2 justify-start px-2">
-        <Box className="text-sm font-[300] text-black mt-2 ">
+      <Box className="flex gap-1 justify-start px-2">
+        <Box className="text-sm font-[300] text-black mt-1.5 ">
           $
         </Box>
         <Box className="text-xl font-[500] text-black  ">
@@ -84,7 +85,7 @@ const MiddleContent = () => {
         </Box>
       </Box>
       <Box className="flex gap-1  px-2">
-        <Box className="w-9/10 text-[11px] text-black font-[550] mt-0.5 ">
+        <Box className="w-9/10 text-[14px] text-black font-[550] mt-0.5 ">
           Auto upload service ready, you can use this avatar within 24 hours.
         </Box>
         <SvgIcon

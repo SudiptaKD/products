@@ -14,7 +14,9 @@ const List = () => {
       <Accordion disableGutters className=" font-semibold text-sm bg-[#FAFAFA]  "
       sx={{
         "&.MuiAccordion-root" : {
-            boxShadow : "none"
+            boxShadow : "none",
+            backgroundColor : "#FAFAFA"
+            
         }
     }}>
         <AccordionSummary  aria-controls="panel1a-content" id="panel1a-header"
@@ -35,7 +37,8 @@ const List = () => {
             <Accordion disableGutters className=" font-semibold text-sm bg-[#FAFAFA]  "
               sx={{
                 "&.MuiAccordion-root" : {
-                    boxShadow : "none"
+                    boxShadow : "none",
+                    backgroundColor : "#FAFAFA"
                 }
             }}>
               <AccordionSummary

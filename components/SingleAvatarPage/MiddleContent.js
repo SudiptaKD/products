@@ -1,9 +1,8 @@
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import IosShareIcon from "@mui/icons-material/IosShare";
-import { Avatar, Popover, Rating, SvgIcon, Typography } from "@mui/material";
+import { Avatar, Box, Popover, Rating, SvgIcon } from "@mui/material";
 import { pink } from "@mui/material/colors";
-import { Box } from "@mui/system";
 import { useRouter } from "next/router";
 
 import Image from "next/image";
@@ -29,9 +28,9 @@ const MiddleContent = () => {
   return (
     <Box>
       <Box className=" px-1 py-1">
-        <Typography className="text-xl font-semibold text-black ">
+        <Box className="text-xl font-semibold text-black ">
           Avatar name “Avatown” -nice original avatar of Avatown
-        </Typography>
+        </Box>
 
         <Box className="flex justify-between gap-2">
             <Box className="flex gap-2">
@@ -40,9 +39,9 @@ const MiddleContent = () => {
             defaultValue={4.7}
             precision={0.1}
           />
-          <Typography className="text-sm font-[500] text-stone-500 mt-1 ">
+          <Box className="text-sm font-[500] text-stone-500 mt-1 ">
             4.7 & 100Likes
-          </Typography>
+          </Box>
           </Box>
 
           <SvgIcon
@@ -65,24 +64,24 @@ const MiddleContent = () => {
           src={`/assets/avatar-pictures/v${query.id}.png`}
           sx={{ width:30, height: 30 }}
         />
-        <Typography className="text-sm font-[500] text-stone-500 mt-1 ">
+        <Box className="text-sm font-[500] text-stone-500 mt-1 ">
           Avatar Joe&apos;s
-        </Typography>
+        </Box>
       </Box>
 
       <Box className="flex gap-2 justify-start px-2">
-        <Typography className="text-sm font-[300] text-black mt-2 ">
+        <Box className="text-sm font-[300] text-black mt-2 ">
           $
-        </Typography>
-        <Typography className="text-xl font-[500] text-black  ">
+        </Box>
+        <Box className="text-xl font-[500] text-black  ">
           50.00
-        </Typography>
+        </Box>
       </Box>
       <Box className="flex gap-1 justify-start px-2">
         <Box className="h-4 w-4 rounded-full bg-sky-400 mt-0.5 "></Box>
-        <Typography className="text-sm font-[500] text-black  ">
+        <Box className="text-sm font-[500] text-black  ">
           Pc Only
-        </Typography>
+        </Box>
       </Box>
       <Box className="flex gap-1  px-2">
         <Box className="w-9/10 text-[11px] text-black font-[550] mt-0.5 ">

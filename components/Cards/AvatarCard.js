@@ -2,9 +2,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import { Avatar, Popover, Rating, SvgIcon, Typography } from "@mui/material";
+import { Avatar, Box, Popover, Rating, SvgIcon } from "@mui/material";
 import { pink } from "@mui/material/colors";
-import { Box } from "@mui/system";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -46,9 +45,9 @@ const AvatarCard = ({ singleAvatarData }) => {
       </Box>
       <Box className=" px-1 py-1">
         <Link href={`/single-avatar/${singleAvatarData?.id}`}>
-        <Typography className="text-md font-[600] ">
+        <Box className="text-md font-[600] ">
           Avatar name “Avatown” -nice original avatar of Avatown
-        </Typography>
+        </Box>
         </Link>
         <Box className="flex justify-between gap-2">
           <Rating
@@ -57,9 +56,9 @@ const AvatarCard = ({ singleAvatarData }) => {
             defaultValue={4.7}
             precision={0.1}
           />
-          <Typography className="text-[12px] font-[500] text-stone-500 ">
+          <Box className="text-[12px] font-[500] text-stone-500 ">
             4.7 & 100Likes
-          </Typography>
+          </Box>
 
           <SvgIcon
             onClick={() => {
@@ -81,24 +80,24 @@ const AvatarCard = ({ singleAvatarData }) => {
           src="/assets/avatar-pictures/v1.png"
           sx={{ width: 24, height: 24 }}
         />
-        <Typography className="text-xs font-[500] text-stone-500 mt-1 ">
+        <Box className="text-xs font-[500] text-stone-500 mt-1 ">
           Avatar Joe&apos;s
-        </Typography>
+        </Box>
       </Box>
       </Link>
       <Box className="flex gap-1 justify-start px-2">
-        <Typography className="text-xs font-[300] text-black mt-2 ">
+        <Box className="text-xs font-[300] text-black mt-2 ">
           $
-        </Typography>
-        <Typography className="text-xl font-[500] text-black  ">
+        </Box>
+        <Box className="text-xl font-[500] text-black  ">
           50.00
-        </Typography>
+        </Box>
       </Box>
       <Box className="flex gap-1 justify-start px-2">
         <Box className="h-4 w-4 rounded-full bg-sky-400 mt-0.5 "></Box>
-        <Typography className="text-sm font-[500] text-black  ">
+        <Box className="text-sm font-[500] text-black  ">
           Pc Only
-        </Typography>
+        </Box>
       </Box>
       <Box className="flex gap-1  px-2">
         <Box className="w-9/10 text-[11px] text-black font-[550] mt-0.5 ">

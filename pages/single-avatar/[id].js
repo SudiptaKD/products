@@ -1,4 +1,5 @@
-import SingleAvatarPage from '@/components/SingleAvatarPage/SIngleAvatarPage'
+import SingleAvatarPage from "@/components/SingleAvatarPage/SingleAvatarPage"
+
 
 
 const index = () => {

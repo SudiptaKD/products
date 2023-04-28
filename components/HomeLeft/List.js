@@ -1,8 +1,8 @@
 import {
-    Accordion,
-    AccordionDetails,
-    AccordionSummary,
-    Box,
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Box,
 } from "@mui/material";
 
 
@@ -11,7 +11,12 @@ const List = () => {
     <>
     <Box className=" ml-4  font-semibold text-md rounded-md">Category</Box>
     <Box>
-      <Accordion disableGutters className=" font-semibold text-sm bg-[#FAFAFA] shadow-none ">
+      <Accordion disableGutters className=" font-semibold text-sm bg-[#FAFAFA]  "
+      sx={{
+        "&.MuiAccordion-root" : {
+            boxShadow : "none"
+        }
+    }}>
         <AccordionSummary  aria-controls="panel1a-content" id="panel1a-header"
             sx={{
                 "&.MuiAccordionSummary-root" : {
@@ -21,12 +26,18 @@ const List = () => {
                     margin : "0px"
                 }
             }}
+            
         >
           <Box className="  bg-[#FAFAFA] hover:bg-slate-200 px-2 py-1 rounded-md">Full Avatar</Box>
         </AccordionSummary>
         <AccordionDetails className="pl-8" >
           <Box>
-            <Accordion disableGutters className=" font-semibold text-sm bg-[#FAFAFA] shadow-none ">
+            <Accordion disableGutters className=" font-semibold text-sm bg-[#FAFAFA]  "
+              sx={{
+                "&.MuiAccordion-root" : {
+                    boxShadow : "none"
+                }
+            }}>
               <AccordionSummary
                 aria-controls="panel1a-content"
                 id="panel1a-header"

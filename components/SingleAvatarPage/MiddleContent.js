@@ -114,6 +114,7 @@ const MiddleContent = () => {
           onClick={() => {
             if (!copied) {
               setCopied(true);
+              navigator.clipboard.writeText(`https://dolami.vercel.app/single-avatar/${query.id}`)
             } else setCopied(false);
           }}
           className="py-1 text-sm text-center px-2 flex gap-1  border-[1px] border-black rounded-md cursor-pointer text-slate-600"

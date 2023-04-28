@@ -35,18 +35,18 @@ const AvatarCard = ({ singleAvatarData }) => {
           height={250}
           width={250}
         />
-        <span className=" cursor-pointer absolute text-12 px-2 right-3 top-3 text-white bg-blue-600 rounded-md flex ">
+        <span className=" cursor-pointer absolute text-[16px] px-2 right-3 top-3 text-white bg-blue-600 rounded-md flex ">
           <SvgIcon
             component={ShoppingCartOutlinedIcon}
             inheritViewBox
-            className="text-base mt-1 mr-1"
+            className="text-[16px] mt-1 mr-1"
           />
           Add
         </span>
       </Box>
       <Box className=" px-1 py-1">
         <Link href={`/single-avatar/${singleAvatarData?.id}`}>
-        <Typography className="text-md font-semibold ">
+        <Typography className="text-md font-[600] ">
           Avatar name “Avatown” -nice original avatar of Avatown
         </Typography>
         </Link>
@@ -57,7 +57,7 @@ const AvatarCard = ({ singleAvatarData }) => {
             defaultValue={4.7}
             precision={0.1}
           />
-          <Typography className="text-xs font-[500] text-stone-500 ">
+          <Typography className="text-[12px] font-[500] text-stone-500 ">
             4.7 & 100Likes
           </Typography>
 
@@ -69,7 +69,7 @@ const AvatarCard = ({ singleAvatarData }) => {
             }}
             component={!favourite ? FavoriteBorderIcon : FavoriteIcon}
             inheritViewBox
-            className="text-base cursor-pointer "
+            className="text-[16px] cursor-pointer "
             sx={{ color: favourite ? pink[500] : "" }}
           />
         </Box>
@@ -130,6 +130,7 @@ const AvatarCard = ({ singleAvatarData }) => {
           onClick={() => {
             if (!copied) {
               setCopied(singleAvatarData.path);
+              navigator.clipboard.writeText(`https://dolami.vercel.app/single-avatar/${singleAvatarData.id}`)
             } else setCopied(false);
           }}
           className="py-1 text-sm text-center px-2 flex gap-1  border-[1px] border-black rounded-md cursor-pointer text-slate-600"

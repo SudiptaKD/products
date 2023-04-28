@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import LeftContent from "./LeftContent";
 import MiddleContent from "./MiddleContent";
+import RightContent from "./RightContent";
 
 const SingleAvatarPage = () => {
   const { query } = useRouter();
@@ -29,6 +30,9 @@ const SingleAvatarPage = () => {
           </Grid>
           <Grid item md={4}>
             <MiddleContent />
+          </Grid>
+          <Grid item md={4} paddingX={8}>
+            <RightContent />
           </Grid>
         </Grid>
       </Box>

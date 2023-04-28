@@ -23,7 +23,7 @@ const LeftContent = () => {
       setOpen(false);
     };
   return (
-    <Box>
+    <Box className="w-[350px]" >
         <Image
         onClick={handleClickOpen}
               className="  rounded-[5px] "
@@ -32,7 +32,7 @@ const LeftContent = () => {
               height={350}
               width={350}
             />
-          <Grid container className="p-2 py-8 w-[350px]">
+          <Grid container className="p-2 py-8 max-w-[350px]">
           <Grid item md={3}  className="flex flex-wrap justify-center content-center" >
             <Image
             onClick={()=> setPic(query.id)}

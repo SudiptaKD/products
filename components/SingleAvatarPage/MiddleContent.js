@@ -96,6 +96,12 @@ const MiddleContent = () => {
           className=" mt-1 font-[300] text-black cursor-pointer"
         />
       </Box>
+      <Box className="text-[16px] text-black font-[550] mt-2.5 ">
+          Description
+        </Box>
+        <Box className="text-[14px] text-black font-[400] mt-0.5 ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </Box>
       <Popover
         id={id}
         open={open}
